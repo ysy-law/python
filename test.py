@@ -47,6 +47,7 @@ list[-1] = 'd'
 print(list, len(list), list[-1])
 '''
 #元组  初始化后不能修改
+'''
 classMates = ('e', 'f', 'g')
 L = [
     ['Apple', 'Google', 'Microsoft'],
@@ -54,7 +55,9 @@ L = [
     ['Adam', 'Bart', 'Lisa']
 ]
 print(L[0][0], L[1][1], L[2][2])
+'''
 #条件判断 if else elif
+'''
 age = 18
 if age > 10:
 	print('你的年龄是：', age, '岁');
@@ -73,7 +76,9 @@ elif bmi >= 28 and bmi < 32:
 else:
 	bmiText = '严重肥胖'
 print(bmiText)
+'''
 #循环 for in循环 range函数 list函数 while循环 break continue
+'''
 names = [0, 1, 2]
 for name in names:
 	print(name)
@@ -81,12 +86,33 @@ print(range(10), list(range(10)))
 L1 = ['Bart', 'Lisa', 'Adam']
 for l1 in L1:
 	print('Hello, ' + l1)
-
-
-
-
-
-
+	'''
+#字典 dict  in c操作符 get方法 pop方法 
+#set结构 add方法 remove方法
+'''
+d = { 'a': 95, 'b': 90, 'c': 85 }
+d['d'] = 70
+print(d['a'], d, 'b' in d, d.get('e', 0), d.pop('a'), d)
+s = set([1,1,2,2,3,4])
+s.add(5)
+tt = { (1, 2): 2 }
+print(s, s.remove(1), tt)
+'''
+#函数 def关键字
+print(abs(-1))
+n1 = 255
+n2 = 1000
+print(hex(n1), hex(n2))
+def my_abs(x):
+	if not isinstance(x, (int, float)):
+		raise TypeError('bad operand type for abs(): \'str\'')
+	if x < 0:
+		x = -x
+	return x
+print(my_abs(0), my_abs(10), my_abs(-10), my_abs('a'))
+def noop():
+	pass
+	
 
 
 
