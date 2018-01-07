@@ -257,9 +257,16 @@ elif findMinAndMax([7, 1, 3, 9, 5]) != (1, 9):
     print('测试失败!')
 else:
     print('测试成功!')
-
-
-
+# 列表生成式
+print([x * x for x in list(range(1, 11))])
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [s.lower() for s in L1 if isinstance(s, str)]
+print(L2)
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
+# 高阶函数 把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式
 
 
 
